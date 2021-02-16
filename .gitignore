@@ -1,0 +1,25 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+src/GithubExplorer.FrontEnd/node_modules
+src/GithubExplorer.FrontEnd/.pnp
+src/GithubExplorer.FrontEnd/.pnp.js
+
+# testing
+src/GithubExplorer.FrontEnd/coverage
+
+# production
+src/GithubExplorer.FrontEnd/build
+src/GithubExplorer.FrontEnd/dist
+
+# misc
+src/GithubExplorer.FrontEnd/.DS_Store
+src/GithubExplorer.FrontEnd/.env
+src/GithubExplorer.FrontEnd/.env.local
+src/GithubExplorer.FrontEnd/.env.development.local
+src/GithubExplorer.FrontEnd/.env.test.local
+src/GithubExplorer.FrontEnd/.env.production.local
+
+src/GithubExplorer.FrontEnd/npm-debug.log*
+src/GithubExplorer.FrontEnd/yarn-debug.log*
+src/GithubExplorer.FrontEnd/yarn-error.log*
