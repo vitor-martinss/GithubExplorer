@@ -4,6 +4,7 @@ export const Header = styled.header`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 	a {
 		display: flex;
 		align-items: center;
@@ -28,30 +29,51 @@ export const RepositoryInfo = styled.section`
 		align-items: center;
 
 		img {
-			width: 12rem;
-			height: 12rem;
+			width: 0;
+			height: 0;
 			border-radius: 50%;
+
+			@media (min-width: 768px) {
+				width: 12rem;
+				height: 12rem;
+			}
 		}
 
 		div {
-			margin-left: 2.4rem;
+			@media (min-width: 768px) {
+				margin-left: 2.4rem;
+			}
 
 			strong {
-				font-size: 3.6rem;
+				font-size: 2.8rem;
 				color: #3d3d4d;
+
+				@media (min-width: 768px) {
+					font-size: 3.6rem;
+				}
 			}
 
 			p {
-				font-size: 1.8rem;
+				font-size: 1.4rem;
 				color: #737380;
 				margin-top: 0.4rem;
+
+				@media (min-width: 768px) {
+					font-size: 1.8rem;
+				}
 			}
 		}
 	}
+
 	ul {
 		display: flex;
+		flex-wrap: wrap;
 		list-style: none;
 		margin-top: 4rem;
+
+		@media (min-width: 768px) {
+			flex-wrap: nowrap;
+		}
 
 		li {
 			&:not(:last-of-type) {
@@ -60,8 +82,12 @@ export const RepositoryInfo = styled.section`
 
 			strong {
 				display: block;
-				font-size: 3.6rem;
+				font-size: 2.8rem;
 				color: #3d3d4d;
+
+				@media (min-width: 768px) {
+					font-size: 3.6rem;
+				}
 			}
 
 			span {
@@ -74,18 +100,26 @@ export const RepositoryInfo = styled.section`
 `;
 
 export const Issues = styled.div`
-	margin-top: 8rem;
+	margin-top: 5rem;
+
+	@media (min-width: 768px) {
+		margin-top: 8rem;
+	}
 
 	a {
 		background: #fff;
 		border-radius: 0.5rem;
 		width: 100%;
-		padding: 2.4rem;
+		padding: 1.5rem;
 		text-decoration: none;
 
 		display: flex;
 		align-items: center;
 		transition: transform 0.2s;
+
+		@media (min-width: 768px) {
+			padding: 2.4rem;
+		}
 
 		&:not(:last-of-type) {
 			margin-bottom: 2rem;
@@ -98,15 +132,25 @@ export const Issues = styled.div`
 		div {
 			margin: 0 1.6rem;
 			flex: 1;
+			overflow: auto;
+
 			strong {
-				font-size: 2rem;
+				font-size: 1.6rem;
 				color: #3d3d4d;
+
+				@media (min-width: 768px) {
+					font-size: 2rem;
+				}
 			}
 
 			p {
-				font-size: 1.8rem;
+				font-size: 1.2rem;
 				color: #a8a8b3;
 				margin-top: 0.4rem;
+
+				@media (min-width: 768px) {
+					font-size: 1.8rem;
+				}
 			}
 		}
 
