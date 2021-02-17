@@ -34,7 +34,8 @@ Technologies that I used to develop this web client
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/vitor-martinss/
+$ git clone https://github.com/vitor-martinss/GithubExplorer
+$ cd _src/GitHubExplorer.FrontEnd
 ```
 
 **Follow the steps below**
